@@ -1,0 +1,215 @@
+:root {
+    /* Primary */
+    --Blue500: hsl(223, 87%, 63%);
+
+    /* Secondary */
+    --Blue200: hsl(223, 100%, 88%);
+    --Red400: hsl(354, 100%, 66%);
+    --Green700: #2ECC71;
+
+    /* Neutral */
+    --Gray400: hsl(0, 0%, 59%);
+    --Gray200: hsl(0, 2%, 84%);
+    --Blue950: hsl(209, 33%, 12%);
+}
+
+/* ==================== */
+/* RESET */
+/* ==================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Libre Franklin", sans-serif;
+    text-align: center;
+}
+
+/* ==================== */
+/* LAYOUT */
+/* ==================== */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+/* ==================== */
+/* TYPOGRAPHY */
+/* ==================== */
+
+h1 {
+    color: var(--Gray400);
+    font-size: 2.3rem;
+    font-weight: 400;
+    margin-bottom: 0.6rem;
+}
+
+h1 strong {
+    color: var(--Blue950);
+}
+
+h2 {
+    color: var(--Blue950);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.copyright-container {
+    color: var(--Gray200);
+    font-size: 0.8rem;
+}
+
+.attribution {
+    margin-top: auto;
+    color: var(--Gray400);
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--Blue500);
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.attribution a:hover {
+    color: var(--Green700);
+}
+
+/* ==================== */
+/* IMAGES */
+/* ==================== */
+
+.logo {
+    max-width: 20rem;
+    margin-bottom: 3rem;
+}
+
+.dashboard-img {
+    max-width: 35rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+/* ==================== */
+/* FORM */
+/* ==================== */
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 25rem;
+    padding: 0.8rem 2rem;
+    border: 0.13rem solid var(--Gray200);
+    border-radius: 5rem;
+    text-align: left;
+}
+
+input::placeholder {
+    color: var(--Gray200);
+}
+
+.input-field:focus {
+    outline: none;
+}
+
+.notify-button {
+    padding: 0.8rem 3rem;
+    border: none;
+    border-radius: 5rem;
+    background-color: var(--Blue500);
+    color: white;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.notify-button:hover {
+    background-color: var(--Green700);
+    transform: translateY(-0.1rem);
+    font-weight: 600;
+}
+
+/* ==================== */
+/* VALIDATION */
+/* ==================== */
+
+.error-message {
+    height: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    color: var(--Red400);
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: center;
+    visibility: hidden;
+}
+
+.input-error {
+    border-color: var(--Red400);
+}
+
+/* ==================== */
+/* SOCIAL ICONS */
+/* ==================== */
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    color: var(--Blue500);
+}
+
+.social-icons i {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--Blue200);
+    border-radius: 5rem;
+    color: var(--Blue500);
+}
+
+.social-icons > i:first-child {
+    padding: 0.5rem 0.7rem;
+}
+
+/* ==================== */
+/* RESPONSIVE */
+/* ==================== */
+
+@media (max-width: 39rem) {
+    form {
+        flex-direction: column;
+        max-width: 20rem;
+        gap: 3rem;
+    }
+
+    .input-container,
+    input,
+    .notify-button {
+        width: 100%;
+    }
+
+    .dashboard-img {
+        width: 100%;
+    }
+}
