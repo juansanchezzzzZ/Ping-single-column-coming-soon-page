@@ -23,7 +23,7 @@ This project focuses on recreating a clean and modern email subscription page us
 
 ## Live Demo
 
-- Live Site: YOUR_LIVE_URL_HERE
+- Live Site: [LIVE DEMO](https://juansanchezzzzz.github.io/Ping-single-column-coming-soon-page/)
 - Frontend Mentor Challenge: https://www.frontendmentor.io/challenges/ping-coming-soon-page-B8TR7kgBz
 
 ---
